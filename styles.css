@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
 .navbar {
     background-color: #245090;
 }
@@ -13,6 +19,7 @@
 .row .col-4 :is(h3, p, a) {
     color: white;
     text-decoration: none;
+    /* filter: drop-shadow(black 2px 2px); */
 }
 
 .row h3:hover {
@@ -23,78 +30,50 @@
     height: 41vw;
 }
 
-.cum {
+.col-8 {
     background: url("media/scene2.jpg");
+    background-color: red;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* height: 35vw; */
 }
+
+.col-8 p {
+    color: white;
+    font-size: 4rem;
+    filter: drop-shadow(black 2px 2px);
+    /* text-align: center;
+    background-color: yellow;
+    position: absolute; */
+}
+
 .col-4 .row {
     overflow: hidden;
 }
 
-/* .about-us, .newsletter {
+.about-us,
+.newsletter {
     background-image: url("media/bubba.jpg");
 }
 
-.events, .gallery {
+.events,
+.gallery {
     background-image: url("media/ludo.jpg");
-} */
-
+}
 
 .col-4 {
     background-color: green;
-}
-
-.col-8 {
-    /* background-image: url("media/scene.png"); */
-}
-
-/* body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #245090;
-}
-
-.topnav * {
-    float: left;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-.topnav *:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav *.active {
-    background-color: #04aa6d;
-    color: white;
-}
-
-table td {
     align-content: center;
-    width: 50vw;
+    padding-top: 0px !important;
 }
 
-table td img {
-    width: 50vw;
+.col-4 div {
+    background-image: url("media/bubba.jpg");
+    background-size: cover;
+    height: 10vw;
+    color: blue;
+    /* margin: none; */
+    /* border: black 3px solid; */
 }
-
-table {
-    width: 100%;
-}
-
-td {
-    background-color: red;
-}
-
-td div {
-    border: black 50px;
-    background-color: green;
-} */
