@@ -70,7 +70,7 @@ body {
 }
 
 .col-4 div {
-    background-image: url("media/bubba.jpg");
+    /* background-image: url("media/bubba.jpg"); */
     background-size: cover;
     height: 10vw;
     color: blue;
