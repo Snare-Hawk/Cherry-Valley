@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-body {
+body * {
     font-family: "Ubuntu", sans-serif;
+    /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
 }
 
 .navbar {
@@ -40,13 +41,16 @@ body {
     /* height: 35vw; */
 }
 
-.col-8 p {
+:is(.col-8, .col-4) :is(p, h3) {
     color: white;
-    font-size: 4rem;
     filter: drop-shadow(black 2px 2px);
     /* text-align: center;
     background-color: yellow;
     position: absolute; */
+}
+
+.col-8 p {
+    font-size: 4rem;
 }
 
 .col-4 .row {
