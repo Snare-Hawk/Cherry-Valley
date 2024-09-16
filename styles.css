@@ -146,12 +146,16 @@ body * {
 
     .footer{
         margin-top: 30px;
+        width:100%;
+    }
+
+    .footer h4{
+        font-size: 3vw;
     }
 
     .footer p {
         font-size: 3vw;
         position: relative;
-        text-anchor: start;
     }
 }
 
