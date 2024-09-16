@@ -114,11 +114,13 @@ body * {
     }
     
     .footer h4 {
+        color: white;
         font-size: large;
     }
     
     
     .footer p {
+        color: white;
         font-size: medium;
     }
 
