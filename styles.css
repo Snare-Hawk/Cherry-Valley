@@ -140,6 +140,10 @@ body * {
     .navbar a {
         padding: 5px; /* Adjust padding for better space management */
     }
+    
+    .footer p {
+        font-size: 6vw;
+    }
 }
 
 /*END OF CODE THAT DEO TRIED TO MAKE WORK */
