@@ -105,6 +105,13 @@ body * {
     background-color: rgba(0, 255, 0, 0.35);
 }
 
+/*Code for About us Page*/
+.about-us-page{
+    background: url("/media/tree.jpg") center fixed;
+    background-size: cover;
+    color:white;
+}
+
 /* Andie's Footer Code */
 /* Temporary */
 .footer {
