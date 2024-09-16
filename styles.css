@@ -111,16 +111,17 @@ body * {
     font-family: "Montserrat", sans-serif;
     background-color: #245090;
     padding-bottom: 10%;
-    }
-    
-    .footer h4 {
-        font-size: large;
-    }
-    
-    
-    .footer p {
-        font-size: medium;
-    }
+}
+
+.footer h4 {
+    color: white;
+    font-size: large;
+}
+
+.footer p {
+    color: white;
+    font-size: medium;
+}
 
 /*Deoram's addition to the code*/
 /* Media Queries for Smaller Screens */
@@ -140,11 +141,10 @@ body * {
     .navbar a {
         padding: 5px; /* Adjust padding for better space management */
     }
-    
+
     .footer p {
         font-size: 4vw;
     }
 }
 
 /*END OF CODE THAT DEO TRIED TO MAKE WORK */
-
