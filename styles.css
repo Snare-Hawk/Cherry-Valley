@@ -89,11 +89,6 @@ body * {
     background-size: cover;
 }
 
-.footer{
-    background-color: #245090;
-    padding-bottom: 10%;
-}
-
 .about-us .overlay {
     background-color: rgb(255, 0, 0, 0.35);
 }
@@ -113,7 +108,9 @@ body * {
 /* Andie's Footer Code */
 /* Temporary */
 .footer {
-    font-family: "Montserrat", sans-serif 
+    font-family: "Montserrat", sans-serif;
+    background-color: #245090;
+    padding-bottom: 10%;
     }
     
     .footer h4 {
