@@ -26,7 +26,6 @@ body * {
 
 /*Deoram's addition to the code*/
 
-
 .row h3:hover {
     text-decoration: underline;
 }
@@ -56,36 +55,54 @@ body * {
 }
 
 .info-sidebar {
-    background-color: green;
-    align-content: center;
-    padding-top: 0px !important;
-    height: auto;
+    /* background-color: green; */
+    /* align-content: center; */
+    /* height: auto; */
 }
 
 .info-sidebar div {
     /* background-image: url("media/bubba.jpg"); */
     background-size: cover;
-    height: 200%;
-    /* background-color: blue; */
-    margin: -1px;
-    /* border: black 3px solid; */
+    height: 100%;
+    /* position: relative; */
     /*Deoram removed this as a test height: 10vw; */
 }
 
+/* coloring for side panel */
 .about-us {
-    background-color: red;
+    background: url("/media/tree.jpg");
+    background-size: cover;
 }
 
 .events {
-    background-color: yellow;
+    background: url("/media/path.jpg");
+    background-size: cover;
 }
 
 .newsletter {
-    background-color: blue;
+    background: url("/media/savannah.jpg");
+    background-size: cover;
 }
 
 .gallery {
-    background-color: lightgreen;
+    background: url("/media/fall trees.jpg");
+    background-size: cover;
+}
+
+.about-us .overlay {
+    background-color: rgb(255, 0, 0, 0.35);
+}
+
+.events .overlay {
+    background-color: rgba(255, 255, 0, 0.35);
+}
+
+.newsletter .overlay {
+    background-color: rgba(0, 0, 255, 0.35);
+}
+
+.gallery .overlay {
+    background-color: rgba(0, 255, 0, 0.35);
 }
 
 /*Deoram's addition to the code*/
