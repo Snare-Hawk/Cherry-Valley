@@ -105,6 +105,21 @@ body * {
     background-color: rgba(0, 255, 0, 0.35);
 }
 
+/* Andie's Footer Code */
+/* Temporary */
+.footer {
+    font-family: "Montserrat", sans-serif 
+    }
+    
+    .footer h4 {
+        font-size: large;
+    }
+    
+    
+    .footer p {
+        font-size: medium;
+    }
+
 /*Deoram's addition to the code*/
 /* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
@@ -126,3 +141,4 @@ body * {
 }
 
 /*END OF CODE THAT DEO TRIED TO MAKE WORK */
+
