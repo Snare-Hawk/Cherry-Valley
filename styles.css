@@ -139,6 +139,8 @@ nav a:hover {
         position: fixed;
         left: 0;
         bottom: 0;
+        background-color: #245090;
+        color: white;
         margin-top: 30px;
         width: 100%;
     }
