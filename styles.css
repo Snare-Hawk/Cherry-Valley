@@ -15,7 +15,7 @@ nav a:hover {
     color: lightgray !important;
 }
 
-.footer {
+footer {
     font-family: "Montserrat", sans-serif !important;
     /* background-color: #245090; */
     /* text-align: left; */
@@ -23,8 +23,12 @@ nav a:hover {
     /* padding-bottom: 20px; */
 }
 
-.footer h4 {
+footer h4 {
     font-size: large;
+}
+
+footer p {
+    margin-bottom: -1rem;
 }
 
 :is(.info-sidebar, footer) a:hover {
@@ -38,7 +42,6 @@ nav a:hover {
 
 .backdrop {
     background: url("media/scene2.jpg");
-    background-color: red;
     background-size: cover;
     /* height: 35vw; */
 }
@@ -62,11 +65,8 @@ nav a:hover {
 }
 
 .info-sidebar div {
-    /* background-image: url("media/bubba.jpg"); */
     background-size: cover;
     height: 100%;
-    /* position: relative; */
-    /*Deoram removed this as a test height: 10vw; */
 }
 
 /* coloring for side panel */
@@ -135,7 +135,7 @@ nav a:hover {
         padding: 5px; /* Adjust padding for better space management */
     }
 
-    .footer {
+    footer {
         position: fixed;
         left: 0;
         bottom: 0;
@@ -145,13 +145,17 @@ nav a:hover {
         width: 100%;
     }
 
-    .footer h4 {
+    footer h4 {
         font-size: 3vw;
     }
 
-    .footer p {
+    footer p {
         font-size: 3vw;
         position: relative;
+    }
+
+    nav {
+
     }
 }
 
