@@ -106,7 +106,7 @@ footer p {
     background-color: rgba(0, 255, 0, 0.35);
 }
 
-/*Code for About us Page*/
+/*Code for About us Page*/ /*fixed means image is fixed while scrolling*/
 .about-us-page {
     background: url("/media/tree.jpg") center fixed;
     background-size: cover;
