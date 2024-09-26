@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+<<<<<<< HEAD
+=======
+:root {
+    --transRed: rgb(255, 0, 0, 0.35);
+    --transYellow: rgba(255, 255, 0, 0.35);
+    --transBlue: rgba(0, 0, 255, 0.35);
+    --transGreen: rgba(0, 255, 0, 0.35);
+    --aboutUs: rgba(36, 80, 144, 0.7);
+}
+
+>>>>>>> c042b6e578a20c8f8168eb3fbd5f7227b679b4a9
 body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
     font-family: "Ubuntu", sans-serif;
     color: white !important;
@@ -36,7 +47,7 @@ footer p {
 }
 
 .main {
-    height: 41vw;
+    height: 94vh;
     /* height: auto; */
 }
 
@@ -90,20 +101,28 @@ footer p {
     background-size: cover;
 }
 
+.about-us-page .overlay {
+    background-color: var(--aboutUs);
+}
+
 .about-us .overlay {
-    background-color: rgb(255, 0, 0, 0.35);
+    background-color: var(--transRed);
 }
 
 .events .overlay {
-    background-color: rgba(255, 255, 0, 0.35);
+    background-color: var(--transYellow);
 }
 
 .newsletter .overlay {
-    background-color: rgba(0, 0, 255, 0.35);
+    background-color: var(--transBlue);
 }
 
 .gallery .overlay {
-    background-color: rgba(0, 255, 0, 0.35);
+    background-color: var(--transGreen);
+}
+
+nav .container-fluid #navbarSdCt {
+    justify-content: space-around;
 }
 
 /*Code for About us Page*/ /*fixed means image is fixed while scrolling*/
@@ -139,8 +158,6 @@ footer p {
         position: fixed;
         left: 0;
         bottom: 0;
-        background-color: #245090;
-        color: white;
         margin-top: 30px;
         width: 100%;
     }
@@ -155,7 +172,6 @@ footer p {
     }
 
     nav {
-
     }
 }
 
