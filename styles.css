@@ -66,12 +66,6 @@ footer p {
     font-size: 4rem;
 }
 
-.info-sidebar {
-    /* background-color: green; */
-    /* align-content: center; */
-    /* height: auto; */
-}
-
 .info-sidebar div {
     background-size: cover;
     height: 100%;
@@ -166,9 +160,6 @@ nav .container-fluid #navbarSdCt {
     footer p {
         font-size: 3vw;
         position: relative;
-    }
-
-    nav {
     }
 }
 
