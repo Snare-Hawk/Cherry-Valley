@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+<<<<<<< HEAD
+=======
 :root {
     --transRed: rgb(255, 0, 0, 0.35);
     --transYellow: rgba(255, 255, 0, 0.35);
@@ -8,6 +10,7 @@
     --aboutUs: rgba(36, 80, 144, 0.7);
 }
 
+>>>>>>> c042b6e578a20c8f8168eb3fbd5f7227b679b4a9
 body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
     font-family: "Ubuntu", sans-serif;
     color: white !important;
@@ -16,7 +19,7 @@ body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
 
 /* navbar things */
 :is(nav, footer) {
-    background-color: #245090;
+    background-color: hwb(216 14% 44%);
 }
 
 nav a:hover {
