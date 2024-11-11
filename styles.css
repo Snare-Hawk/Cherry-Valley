@@ -6,6 +6,7 @@
     --transBlue: rgba(0, 0, 255, 0.35);
     --transGreen: rgba(0, 255, 0, 0.35);
     --aboutUs: rgba(36, 80, 144, 0.7);
+    --gallery: rgba(162, 189, 244, 0.7);
 }
 
 body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
@@ -92,10 +93,6 @@ footer p {
     background-size: cover;
 }
 
-.about-us-page .overlay {
-    background-color: var(--aboutUs);
-}
-
 .about-us .overlay {
     background-color: var(--transRed);
 }
@@ -117,10 +114,13 @@ nav .container-fluid #navbarSdCt {
 }
 
 /*Code for About us Page*/ /*fixed means image is fixed while scrolling*/
-.about-us-page {
-    background: url("/media/tree.jpg") center fixed;
+#aboutUs {
+    background: url("/media/shack.jpg") center fixed;
     background-size: cover;
-    color: white;
+}
+
+#aboutUs .overlay {
+    background-color: var(--aboutUs);
 }
 
 /* Andie's Footer Code */
@@ -165,6 +165,10 @@ nav .container-fluid #navbarSdCt {
 
 /* END OF CODE THAT DEO TRIED TO MAKE WORK */
 
+#navbarSdCt a {
+    text-align: center !important;
+}
+
 main.daGallery {
     background-color: red;
 }
@@ -172,4 +176,7 @@ main.daGallery {
 main.daGallery img {
     padding: 1rem;
     margin: auto;
+}
+
+#aboutUs {
 }
