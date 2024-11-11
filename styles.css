@@ -163,4 +163,13 @@ nav .container-fluid #navbarSdCt {
     }
 }
 
-/*END OF CODE THAT DEO TRIED TO MAKE WORK */
+/* END OF CODE THAT DEO TRIED TO MAKE WORK */
+
+main.daGallery {
+    background-color: red;
+}
+
+main.daGallery img {
+    padding: 1rem;
+    margin: auto;
+}
