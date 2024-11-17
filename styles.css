@@ -31,17 +31,38 @@ nav a:hover {
     color: lightgray;
 }
 
-footer {
+/* Footer Styling */
+.footer {
+    background-color: hwb(216 14% 44%);
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-footer h4 {
+.footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.footer h4 {
     font-size: large;
+    margin-bottom: 10px;
 }
 
-footer p {
-    margin-bottom: -1rem;
+.footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 :is(.info-sidebar, footer) a:hover {
@@ -124,6 +145,11 @@ nav .container-fluid #navbarSdCt {
         background-color: var(--aboutUs);
     }
 }
+
+.about-us .about-us-text li p { 
+    font-family: "Ubuntu", sans-serif; 
+    color: #424242; 
+} 
 
 /* Newsletter Section */
 #newsletter {
@@ -306,23 +332,12 @@ button:hover {
         padding: 5px; /* Adjust padding for better space management */
     }
 
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        margin-top: 30px;
-        width: 100%;
-    }
-
-    footer h4 {
+    /* andie tests the foot not clickbait */
+    .footer h4, .footer p {
         font-size: 3vw;
-    }
-
-    footer p {
-        font-size: 3vw;
-        position: relative;
     }
 }
+
 
 /* Additional Styles */
 #navbarSdCt a {
