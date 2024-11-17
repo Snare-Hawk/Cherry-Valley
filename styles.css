@@ -12,6 +12,10 @@
     --gallery: rgba(162, 189, 244, 0.7);
 }
 
+nav {
+    color: white !important;
+}
+
 body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
     font-family: "Ubuntu", sans-serif;
     color: white;
@@ -45,22 +49,22 @@ footer p {
 }
 
 /* Main Content */
-.main {
+#homepage {
     height: 94vh;
+
+    :is(p, h3) {
+        color: white;
+        filter: drop-shadow(2px 2px 2px black);
+    }
 }
 
 .backdrop {
     background: url("media/scene2.jpg");
     background-size: cover;
-}
 
-.main :is(p, h3) {
-    color: white;
-    filter: drop-shadow(2px 2px 2px black);
-}
-
-.backdrop p {
-    font-size: 4rem;
+    p {
+        font-size: 4rem;
+    }
 }
 
 /* Info Sidebar */
@@ -73,37 +77,37 @@ footer p {
 .about-us {
     background: url("/media/tree.jpg");
     background-size: cover;
+
+    .overlay {
+        background-color: var(--transRed);
+    }
 }
 
 .events {
     background: url("/media/path.jpg");
     background-size: cover;
+
+    .overlay {
+        background-color: var(--transYellow);
+    }
 }
 
 .newsletter {
     background: url("/media/savannah.jpg");
     background-size: cover;
+
+    .overlay {
+        background-color: var(--transBlue);
+    }
 }
 
 .gallery {
-    background: url("/media/fall_trees.jpg");
+    background: url("/media/fall trees.jpg");
     background-size: cover;
-}
 
-.about-us .overlay {
-    background-color: var(--transRed);
-}
-
-.events .overlay {
-    background-color: var(--transYellow);
-}
-
-.newsletter .overlay {
-    background-color: var(--transBlue);
-}
-
-.gallery .overlay {
-    background-color: var(--transGreen);
+    .overlay {
+        background-color: var(--transGreen);
+    }
 }
 
 /* Navbar Specific Styling */
@@ -115,10 +119,68 @@ nav .container-fluid #navbarSdCt {
 #aboutUs {
     background: url("/media/shack.jpg") center fixed;
     background-size: cover;
+
+    .overlay {
+        background-color: var(--aboutUs);
+    }
 }
 
-#aboutUs .overlay {
-    background-color: var(--aboutUs);
+/* Newsletter Section */
+#newsletter {
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .container h1,
+    .container h2 {
+        color: #333;
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+
+    input[type="email"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: darken(var(--primary-color), 10%);
+    }
+
+    .confirmation {
+        display: none;
+    }
+
+    #newsletterImage {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /* Newsletter Section */ 
@@ -267,11 +329,11 @@ button:hover {
     text-align: center;
 }
 
-main.daGallery {
+#daGallery {
     background-color: red;
 }
 
-main.daGallery img {
+#daGallery img {
     padding: 1rem;
     margin: auto;
 }
