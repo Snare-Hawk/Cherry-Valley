@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+/* Andie's attempt at organizing the css code */
 
 :root {
-    --transRed: rgb(255, 0, 0, 0.35);
+    --transRed: rgba(255, 0, 0, 0.35);
     --transYellow: rgba(255, 255, 0, 0.35);
     --transBlue: rgba(0, 0, 255, 0.35);
     --transGreen: rgba(0, 255, 0, 0.35);
@@ -11,25 +14,22 @@
 
 body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
     font-family: "Ubuntu", sans-serif;
-    color: white !important;
-    text-decoration: none !important;
+    color: white;
+    text-decoration: none;
 }
 
-/* navbar things */
+/* Navbar and Footer Styling */
 :is(nav, footer) {
     background-color: hwb(216 14% 44%);
 }
 
 nav a:hover {
-    color: lightgray !important;
+    color: lightgray;
 }
 
 footer {
-    font-family: "Montserrat", sans-serif !important;
-    /* background-color: #245090; */
-    /* text-align: left; */
-    /* position: relative; */
-    /* padding-bottom: 20px; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
 }
 
 footer h4 {
@@ -41,38 +41,35 @@ footer p {
 }
 
 :is(.info-sidebar, footer) a:hover {
-    text-decoration: underline !important;
+    text-decoration: underline;
 }
 
+/* Main Content */
 .main {
     height: 94vh;
-    /* height: auto; */
 }
 
 .backdrop {
     background: url("media/scene2.jpg");
     background-size: cover;
-    /* height: 35vw; */
 }
 
 .main :is(p, h3) {
     color: white;
-    filter: drop-shadow(black 2px 2px);
-    /* text-align: center;
-    background-color: yellow;
-    position: absolute; */
+    filter: drop-shadow(2px 2px 2px black);
 }
 
 .backdrop p {
     font-size: 4rem;
 }
 
+/* Info Sidebar */
 .info-sidebar div {
     background-size: cover;
     height: 100%;
 }
 
-/* coloring for side panel */
+/* Side Panel Coloring */
 .about-us {
     background: url("/media/tree.jpg");
     background-size: cover;
@@ -89,7 +86,7 @@ footer p {
 }
 
 .gallery {
-    background: url("/media/fall trees.jpg");
+    background: url("/media/fall_trees.jpg");
     background-size: cover;
 }
 
@@ -109,11 +106,12 @@ footer p {
     background-color: var(--transGreen);
 }
 
+/* Navbar Specific Styling */
 nav .container-fluid #navbarSdCt {
     justify-content: space-around;
 }
 
-/*Code for About us Page*/ /*fixed means image is fixed while scrolling*/
+/* About Us Page */
 #aboutUs {
     background: url("/media/shack.jpg") center fixed;
     background-size: cover;
@@ -123,10 +121,63 @@ nav .container-fluid #navbarSdCt {
     background-color: var(--aboutUs);
 }
 
-/* Andie's Footer Code */
-/* Temporary */
+/* Newsletter Section */ 
+.container { 
+    max-width: 600px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    font-family: "Ubuntu", sans-serif; 
+} 
 
-/*Deoram's addition to the code*/
+.container h1, .container h2 
+{ 
+    color: #333; 
+} 
+
+form { 
+    margin-bottom: 20px;
+ } 
+ 
+ label { 
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: 500; 
+} 
+
+input[type="email"] { 
+    width: calc(100% - 20px); 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+} 
+
+button { 
+    padding: 10px 20px; 
+    background-color: var(--primary-color); 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+} 
+
+button:hover { 
+    background-color: darken(var(--primary-color), 10%); 
+} 
+
+.confirmation { 
+    display: none; 
+} 
+
+#newsletterImage { 
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Deo's code that he tried to make work */
 /* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
     .backdrop p {
@@ -163,10 +214,9 @@ nav .container-fluid #navbarSdCt {
     }
 }
 
-/* END OF CODE THAT DEO TRIED TO MAKE WORK */
-
+/* Additional Styles */
 #navbarSdCt a {
-    text-align: center !important;
+    text-align: center;
 }
 
 main.daGallery {
@@ -176,7 +226,4 @@ main.daGallery {
 main.daGallery img {
     padding: 1rem;
     margin: auto;
-}
-
-#aboutUs {
 }
