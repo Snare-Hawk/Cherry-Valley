@@ -10,6 +10,15 @@
     --transGreen: rgba(0, 255, 0, 0.35);
     --aboutUs: rgba(36, 80, 144, 0.7);
     --gallery: rgba(162, 189, 244, 0.7);
+
+    /* Vars for footer*/
+    --footer-bg-color: hwb(216 14% 44%);
+    --footer-text-color: white;
+    --footer-link-color: rgb(206, 207, 125);
+    --footer-hover-color: white;
+    --font-family-montserrat: "Montserrat", sans-serif;
+    --font-family-unbuntu: "Ubuntu", sans-serif;
+
 }
 
 nav {
@@ -32,37 +41,39 @@ nav a:hover {
 }
 
 /* Footer Styling */
-.footer {
-    background-color: hwb(216 14% 44%);
-    font-family: "Montserrat", sans-serif;
-    color: white;
+footer {
+    background-color: var(--footer-bg-color);
+    font-family: var(--font-family-montserrat);
+    color: var(--footer-text-color);
     padding: 20px 0;
     text-align: center;
 }
 
-.footer .container {
+footer .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.footer h4 {
-    font-size: large;
+footer h4 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.footer p {
+footer p {
     margin-bottom: 0.5rem;
 }
 
-.footer a {
-    color: lightgray;
+footer a {
+    color: var(--footer-link-color);
     text-decoration: none;
 }
 
-.footer a:hover {
+footer a:hover {
     text-decoration: underline;
-    color: white;
+    color: var(--footer-hover-color);
 }
 
 :is(.info-sidebar, footer) a:hover {
@@ -333,8 +344,13 @@ button:hover {
     }
 
     /* andie tests the foot not clickbait */
-    .footer h4, .footer p {
+    footer h4, .footer p {
         font-size: 3vw;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
