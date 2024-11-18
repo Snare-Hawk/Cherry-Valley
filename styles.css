@@ -32,41 +32,41 @@ nav a:hover {
 }
 
 /* Footer Styling */
-.footer {
-    background-color: hwb(216 14% 44%);
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+footer {
+	background-color: hwb(216 14% 44%);
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	padding: 20px 0;
+	text-align: center;
 }
 
-.footer .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px 20px;
-}
+footer .container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 10px 20px;
 
-.footer h4 {
-    font-size: large;
-    margin-bottom: 10px;
-}
+	h4 {
+		font-size: large;
+		margin-bottom: 10px;
+	}
 
-.footer p {
-    margin-bottom: 0.5rem;
-}
+	p {
+		margin-bottom: 0.5rem;
+	}
 
-.footer a {
-    color: lightgray;
-    text-decoration: none;
-}
+	a {
+		color: lightgray;
+		text-decoration: none;
+	}
 
-.footer a:hover {
-    text-decoration: underline;
-    color: white;
-}
+	a:hover {
+		text-decoration: underline;
+		color: white;
+	}
 
-:is(.info-sidebar, footer) a:hover {
-    text-decoration: underline;
+	:is(.info-sidebar, footer) a:hover {
+		text-decoration: underline;
+	}
 }
 
 /* Main Content */
@@ -209,108 +209,53 @@ nav .container-fluid #navbarSdCt {
 	}
 }
 
-/* Newsletter Section */ 
-.container { 
-    max-width: 600px; 
-    margin: 50px auto; 
-    padding: 20px; 
-    background-color: #fff; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
-    font-family: "Ubuntu", sans-serif; 
-} 
+/* Partner Section */
+#partners section {
+	background-color: chocolate;
+	padding: 30px 0;
+	text-align: center;
 
-.container h1, .container h2 
-{ 
-    color: #333; 
-} 
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+	}
 
-form { 
-    margin-bottom: 20px;
- } 
- 
- label { 
-    display: block; 
-    margin-bottom: 8px; 
-    font-weight: 500; 
-} 
+	h2 {
+		font-family: "Montserrat", sans-serif;
+		color: #333;
+		margin-bottom: 20px;
+	}
 
-input[type="email"] { 
-    width: calc(100% - 20px); 
-    padding: 8px; 
-    margin-bottom: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-} 
+	ul {
+		font-family: "Ubuntu", sans-serif;
+		color: #666;
+		font-size: 1.2rem;
+		margin-bottom: 20px;
 
-button { 
-    padding: 10px 20px; 
-    background-color: var(--primary-color); 
-    color: #fff; 
-    border: none; 
-    border-radius: 4px; 
-    cursor: pointer; 
-} 
+		li {
+			font-family: "Ubuntu", sans-serif;
+			color: #424242;
+		}
 
-button:hover { 
-    background-color: darken(var(--primary-color), 10%); 
-} 
+		p {
+			margin-bottom: 10px;
+		}
 
-.confirmation { 
-    display: none; 
-} 
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+	}
 
-#newsletterImage { 
-    max-width: 100%; 
-    height: auto; 
-}
-
-/* Partner Section */ 
-.partner-section { 
-    background-color: #f4f4f4; 
-    padding: 30px 0; 
-    text-align: center; 
-} 
-
-.partner-section .container { 
-    max-width: 800px; 
-    margin: 0 auto; 
-} 
-
-.partner-section h2 { 
-    font-family: "Montserrat", sans-serif; 
-    color: #333; 
-    margin-bottom: 20px; 
-} 
-
-.partner-section .partner-text { 
-    font-family: "Ubuntu", sans-serif; 
-    color: #666; 
-    font-size: 1.2rem; 
-    margin-bottom: 20px; 
-} 
-
-.partner-section .partner-updates li { 
-    font-family: "Ubuntu", sans-serif; 
-    color: #424242; 
-} 
-
-.partner-section .partner-updates p { 
-    margin-bottom: 10px; 
-} 
-
-.partner-section .partner-updates img { 
-    max-width: 100%; 
-    height: auto; 
-    margin-bottom: 10px; 
-} 
-
-.partner-section pre, .partner-section code { 
-    background-color: #eee; 
-    padding: 10px; 
-    border-radius: 5px; 
-    white-space: pre-wrap; 
-    word-wrap: break-word; 
+	pre,
+	code {
+		background-color: #eee;
+		padding: 10px;
+		border-radius: 5px;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
 }
 
 /* Deo's code that he tried to make work */
@@ -332,10 +277,11 @@ button:hover {
 		padding: 5px; /* Adjust padding for better space management */
 	}
 
-    /* andie tests the foot not clickbait */
-    .footer h4, .footer p {
-        font-size: 3vw;
-    }
+	/* andie tests the foot not clickbait */
+	footer h4,
+	footer p {
+		font-size: 3vw;
+	}
 }
 
 /* Additional Styles */
