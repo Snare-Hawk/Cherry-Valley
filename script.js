@@ -19,4 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//
+// loads navbar and footer on every page
+$(function () {
+    $("#nav-placeholder").load("nav.html");
+    $("#footer-placeholder").load("footer.html");s
+});
