@@ -44,6 +44,7 @@ footer .container {
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 10px 20px;
+	display: flex;
 
 	h4 {
 		font-size: large;
@@ -257,6 +258,22 @@ nav .container-fluid #navbarSdCt {
 		word-wrap: break-word;
 	}
 }
+
+/* Donation Page - one time donos - maybe make it into a drop down menu?
+
+#donate {
+	.container {
+		max-width: 600px;
+		margin: 50px auto;
+		padding: 20px;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		font-family: "Ubuntu", sans-serif;
+	}
+} 
+
+/*
 
 /* Deo's code that he tried to make work */
 /* Media Queries for Smaller Screens */
