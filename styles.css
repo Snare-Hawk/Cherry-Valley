@@ -4,367 +4,367 @@
 /* Andie's attempt at organizing the css code */
 
 :root {
-    --transRed: rgba(255, 0, 0, 0.35);
-    --transYellow: rgba(255, 255, 0, 0.35);
-    --transBlue: rgba(0, 0, 255, 0.35);
-    --transGreen: rgba(0, 255, 0, 0.35);
-    --aboutUs: rgba(36, 80, 144, 0.7);
-    --gallery: rgba(162, 189, 244, 0.7);
+	--transRed: rgba(255, 0, 0, 0.35);
+	--transYellow: rgba(255, 255, 0, 0.35);
+	--transBlue: rgba(0, 0, 255, 0.35);
+	--transGreen: rgba(0, 255, 0, 0.35);
+	--aboutUs: rgba(36, 80, 144, 0.7);
+	--gallery: rgba(162, 189, 244, 0.7);
 
-    /* Vars for footer*/
-    --footer-bg-color: hwb(216 14% 44%);
-    --footer-text-color: white;
-    --footer-link-color: rgb(206, 207, 125);
-    --footer-hover-color: white;
-    --font-family-montserrat: "Montserrat", sans-serif;
-    --font-family-unbuntu: "Ubuntu", sans-serif;
-
+	/* Vars for footer*/
+	--footer-bg-color: hwb(216 14% 44%);
+	--footer-text-color: white;
+	--footer-link-color: rgb(206, 207, 125);
+	--footer-hover-color: white;
+	--font-family-montserrat: "Montserrat", sans-serif;
+	--font-family-unbuntu: "Ubuntu", sans-serif;
 }
 
 nav {
-    color: white !important;
+	color: white !important;
 }
 
 body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
-    font-family: "Ubuntu", sans-serif;
-    color: white;
-    text-decoration: none;
+	font-family: "Ubuntu", sans-serif;
+	color: white;
+	text-decoration: none;
 }
 
 /* Navbar and Footer Styling */
 :is(nav, footer) {
-    background-color: hwb(216 14% 44%);
+	background-color: hwb(216 14% 44%);
 }
 
 nav a:hover {
-    color: lightgray;
+	color: lightgray;
 }
 
 /* Footer Styling */
 footer {
-    background-color: var(--footer-bg-color);
-    font-family: var(--font-family-montserrat);
-    color: var(--footer-text-color);
-    padding: 20px 0;
-    text-align: center;
+	background-color: var(--footer-bg-color);
+	font-family: var(--font-family-montserrat);
+	color: var(--footer-text-color);
+	padding: 20px 0;
+	text-align: center;
 }
 
 footer .container {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 footer h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
 }
 
 footer p {
-    margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 footer a {
-    color: var(--footer-link-color);
-    text-decoration: none;
+	color: var(--footer-link-color);
+	text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
-    color: var(--footer-hover-color);
+	text-decoration: underline;
+	color: var(--footer-hover-color);
 }
 
 :is(.info-sidebar, footer) a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Main Content */
 #homepage {
-    height: 94vh;
+	height: 94vh;
 
-    :is(p, h3) {
-        color: white;
-        filter: drop-shadow(2px 2px 2px black);
-    }
+	:is(p, h3) {
+		color: white;
+		filter: drop-shadow(2px 2px 2px black);
+	}
 }
 
 .backdrop {
-    background: url("media/scene2.jpg");
-    background-size: cover;
+	background: url("media/scene2.jpg");
+	background-size: cover;
 
-    p {
-        font-size: 4rem;
-    }
+	p {
+		font-size: 4rem;
+	}
 }
 
 /* Info Sidebar */
 .info-sidebar div {
-    background-size: cover;
-    height: 100%;
+	background-size: cover;
+	height: 100%;
 }
 
 /* Side Panel Coloring */
 .about-us {
-    background: url("/media/tree.jpg");
-    background-size: cover;
+	background: url("/media/tree.jpg");
+	background-size: cover;
 
-    .overlay {
-        background-color: var(--transRed);
-    }
+	.overlay {
+		background-color: var(--transRed);
+	}
 }
 
 .events {
-    background: url("/media/path.jpg");
-    background-size: cover;
+	background: url("/media/path.jpg");
+	background-size: cover;
 
-    .overlay {
-        background-color: var(--transYellow);
-    }
+	.overlay {
+		background-color: var(--transYellow);
+	}
 }
 
 .newsletter {
-    background: url("/media/savannah.jpg");
-    background-size: cover;
+	background: url("/media/savannah.jpg");
+	background-size: cover;
 
-    .overlay {
-        background-color: var(--transBlue);
-    }
+	.overlay {
+		background-color: var(--transBlue);
+	}
 }
 
 .gallery {
-    background: url("/media/fall trees.jpg");
-    background-size: cover;
+	background: url("/media/fall trees.jpg");
+	background-size: cover;
 
-    .overlay {
-        background-color: var(--transGreen);
-    }
+	.overlay {
+		background-color: var(--transGreen);
+	}
 }
 
 /* Navbar Specific Styling */
 nav .container-fluid #navbarSdCt {
-    justify-content: space-around;
+	justify-content: space-around;
 }
 
 /* About Us Page */
 #aboutUs {
-    background: url("/media/shack.jpg") center fixed;
-    background-size: cover;
+	background: url("/media/shack.jpg") center fixed;
+	background-size: cover;
 
-    .overlay {
-        background-color: var(--aboutUs);
-    }
+	.overlay {
+		background-color: var(--aboutUs);
+	}
 }
 
-.about-us .about-us-text li p { 
-    font-family: "Ubuntu", sans-serif; 
-    color: #424242; 
-} 
+.about-us .about-us-text li p {
+	font-family: "Ubuntu", sans-serif;
+	color: #424242;
+}
 
 /* Newsletter Section */
 #newsletter {
-    .container {
-        max-width: 600px;
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        font-family: "Ubuntu", sans-serif;
-    }
+	.container {
+		max-width: 600px;
+		margin: 50px auto;
+		padding: 20px;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		font-family: "Ubuntu", sans-serif;
+	}
 
-    .container h1,
-    .container h2 {
-        color: #333;
-    }
+	.container h1,
+	.container h2 {
+		color: #333;
+	}
 
-    form {
-        margin-bottom: 20px;
-    }
+	form {
+		margin-bottom: 20px;
+	}
 
-    label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: 500;
-    }
+	label {
+		display: block;
+		margin-bottom: 8px;
+		font-weight: 500;
+	}
 
-    input[type="email"] {
-        width: calc(100% - 20px);
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+	input[type="email"] {
+		width: calc(100% - 20px);
+		padding: 8px;
+		margin-bottom: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
 
-    button {
-        padding: 10px 20px;
-        background-color: var(--primary-color);
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+	button {
+		padding: 10px 20px;
+		background-color: var(--primary-color);
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
 
-    button:hover {
-        background-color: darken(var(--primary-color), 10%);
-    }
+	button:hover {
+		background-color: darken(var(--primary-color), 10%);
+	}
 
-    .confirmation {
-        display: none;
-    }
+	.confirmation {
+		display: none;
+	}
 
-    #newsletterImage {
-        max-width: 100%;
-        height: auto;
-    }
+	#newsletterImage {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
-/* Newsletter Section */ 
-.container { 
-    max-width: 600px; 
-    margin: 50px auto; 
-    padding: 20px; 
-    background-color: #fff; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
-    font-family: "Ubuntu", sans-serif; 
-} 
-
-.container h1, .container h2 
-{ 
-    color: #333; 
-} 
-
-form { 
-    margin-bottom: 20px;
- } 
- 
- label { 
-    display: block; 
-    margin-bottom: 8px; 
-    font-weight: 500; 
-} 
-
-input[type="email"] { 
-    width: calc(100% - 20px); 
-    padding: 8px; 
-    margin-bottom: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-} 
-
-button { 
-    padding: 10px 20px; 
-    background-color: var(--primary-color); 
-    color: #fff; 
-    border: none; 
-    border-radius: 4px; 
-    cursor: pointer; 
-} 
-
-button:hover { 
-    background-color: darken(var(--primary-color), 10%); 
-} 
-
-.confirmation { 
-    display: none; 
-} 
-
-#newsletterImage { 
-    max-width: 100%; 
-    height: auto; 
+/* Newsletter Section */
+.container {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
 }
 
-/* Partner Section */ 
-.partner-section { 
-    background-color: #f4f4f4; 
-    padding: 30px 0; 
-    text-align: center; 
-} 
+.container h1,
+.container h2 {
+	color: #333;
+}
 
-.partner-section .container { 
-    max-width: 800px; 
-    margin: 0 auto; 
-} 
+form {
+	margin-bottom: 20px;
+}
 
-.partner-section h2 { 
-    font-family: "Montserrat", sans-serif; 
-    color: #333; 
-    margin-bottom: 20px; 
-} 
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 500;
+}
 
-.partner-section .partner-text { 
-    font-family: "Ubuntu", sans-serif; 
-    color: #666; 
-    font-size: 1.2rem; 
-    margin-bottom: 20px; 
-} 
+input[type="email"] {
+	width: calc(100% - 20px);
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
 
-.partner-section .partner-updates li { 
-    font-family: "Ubuntu", sans-serif; 
-    color: #424242; 
-} 
+button {
+	padding: 10px 20px;
+	background-color: var(--primary-color);
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
 
-.partner-section .partner-updates p { 
-    margin-bottom: 10px; 
-} 
+button:hover {
+	background-color: darken(var(--primary-color), 10%);
+}
 
-.partner-section .partner-updates img { 
-    max-width: 100%; 
-    height: auto; 
-    margin-bottom: 10px; 
-} 
+.confirmation {
+	display: none;
+}
 
-.partner-section pre, .partner-section code { 
-    background-color: #eee; 
-    padding: 10px; 
-    border-radius: 5px; 
-    white-space: pre-wrap; 
-    word-wrap: break-word; 
+#newsletterImage {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Partner Section */
+.partner-section {
+	background-color: #f4f4f4;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.partner-section .container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.partner-section h2 {
+	font-family: "Montserrat", sans-serif;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.partner-section .partner-text {
+	font-family: "Ubuntu", sans-serif;
+	color: #666;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.partner-section .partner-updates li {
+	font-family: "Ubuntu", sans-serif;
+	color: #424242;
+}
+
+.partner-section .partner-updates p {
+	margin-bottom: 10px;
+}
+
+.partner-section .partner-updates img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.partner-section pre,
+.partner-section code {
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 5px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
 /* Deo's code that he tried to make work */
 /* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
-    .backdrop p {
-        font-size: 6vw; /* Larger relative font size on smaller screens */
-    }
+	.backdrop p {
+		font-size: 6vw; /* Larger relative font size on smaller screens */
+	}
 
-    .info-sidebar h3 {
-        font-size: 1rem; /* Adjust font size for h3 on smaller screens */
-    }
+	.info-sidebar h3 {
+		font-size: 1rem; /* Adjust font size for h3 on smaller screens */
+	}
 
-    .info-sidebar p {
-        font-size: 0.9rem; /* Adjust font size for p on smaller screens */
-    }
+	.info-sidebar p {
+		font-size: 0.9rem; /* Adjust font size for p on smaller screens */
+	}
 
-    .navbar a {
-        padding: 5px; /* Adjust padding for better space management */
-    }
+	.navbar a {
+		padding: 5px; /* Adjust padding for better space management */
+	}
 
-    /* andie tests the foot not clickbait */
-    footer h4, .footer p {
-        font-size: 3vw;
-    }
+	/* andie tests the foot not clickbait */
+	footer h4,
+	.footer p {
+		font-size: 3vw;
+	}
 
-    footer .container {
-        flex-direction: column;
-        align-items: center;
-    }
+	footer .container {
+		flex-direction: column;
+		align-items: center;
+	}
 }
-
 
 /* Additional Styles */
 #navbarSdCt a {
-    text-align: center;
+	text-align: center;
 }
 
 #daGallery {
-    background-color: red;
+	background-color: red;
 }
 
 #daGallery img {
-    padding: 1rem;
-    margin: auto;
+	padding: 1rem;
+	margin: auto;
 }
