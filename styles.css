@@ -12,16 +12,14 @@
 */
 
 :root {
+	background-color: var(--mainColor);
+	--mainColor: rgba(36, 79, 143, 1);
 	--transRed: rgba(255, 0, 0, 0.35);
 	--transYellow: rgba(255, 255, 0, 0.35);
 	--transBlue: rgba(0, 0, 255, 0.35);
 	--transGreen: rgba(0, 255, 0, 0.35);
 	--aboutUs: rgba(36, 80, 144, 0.7);
 	--gallery: rgba(162, 189, 244, 0.7);
-}
-
-nav {
-	color: white !important;
 }
 
 body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
@@ -31,52 +29,48 @@ body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
 }
 
 /* Navbar and Footer Styling */
-:is(nav, footer) {
-	background-color: hwb(216 14% 44%);
-}
+nav,
+footer {
+	color: white;
+	background-color: var(--mainColor);
 
-nav a:hover {
-	color: lightgray;
+	a:hover {
+		color: lightgray !important;
+	}
 }
 
 /* Footer Styling */
-footer {
-	background-color: hwb(216 14% 44%);
-	font-family: "Montserrat", sans-serif;
-	color: white;
-	padding: 20px 0;
-	text-align: center;
-}
+/* footer {
+	.container-fluid {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 10px 20px;
+		display: flex;
 
-footer .container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 10px 20px;
-	display: flex;
+		h4 {
+			font-size: large;
+			margin-bottom: 10px;
+		}
 
-	h4 {
-		font-size: large;
-		margin-bottom: 10px;
+		p {
+			margin-bottom: 0.5rem;
+		}
+
+		a {
+			color: lightgray;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+			color: white;
+		}
+
+		:is(.info-sidebar, footer) a:hover {
+			text-decoration: underline;
+		}
 	}
-
-	p {
-		margin-bottom: 0.5rem;
-	}
-
-	a {
-		color: lightgray;
-		text-decoration: none;
-	}
-
-	a:hover {
-		text-decoration: underline;
-		color: white;
-	}
-
-	:is(.info-sidebar, footer) a:hover {
-		text-decoration: underline;
-	}
-}
+} */
 
 /* Main Content */
 #homepage {
@@ -153,12 +147,17 @@ nav .container-fluid #navbarSdCt {
 	.overlay {
 		background-color: var(--aboutUs);
 	}
+
+	p :last-child {
+		margin-bottom: 0px !important;
+		color: red !important;
+	}
 }
 
-.about-us .about-us-text li p {
-	font-family: "Ubuntu", sans-serif;
-	color: #424242;
-}
+/* #aboutUs:last-child {
+	margin-bottom: 0px !important;
+	color: red !important;
+} */
 
 /* Newsletter Section */
 #newsletter {
