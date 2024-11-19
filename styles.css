@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-/* Andie's attempt at organizing the css code */
+
+/* for css animations
+
+	for nav bar
+@keyframes nav{
+	from {background-color: rgba(36, 80, 144, 0.7);}
+	to {background-color: rgba(18, 40, 64, 0.35);}
+}
+*/
 
 :root {
 	--transRed: rgba(255, 0, 0, 0.35);
