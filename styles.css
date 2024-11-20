@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"); */
 
 
 /* for css animations
@@ -12,31 +12,36 @@
 */
 
 :root {
-	background-color: var(--mainColor);
-	--mainColor: rgba(36, 79, 143, 1);
-	--transRed: rgba(255, 0, 0, 0.35);
-	--transYellow: rgba(255, 255, 0, 0.35);
-	--transBlue: rgba(0, 0, 255, 0.35);
-	--transGreen: rgba(0, 255, 0, 0.35);
-	--aboutUs: rgba(36, 80, 144, 0.7);
-	--gallery: rgba(162, 189, 244, 0.7);
+    background-color: var(--mainColor);
+    --mainColor: rgba(36, 79, 143, 1);
+    --transRed: rgba(255, 0, 0, 0.35);
+    --transYellow: rgba(255, 255, 0, 0.35);
+    --transBlue: rgba(0, 0, 255, 0.35);
+    --transGreen: rgba(0, 255, 0, 0.35);
+    --aboutUs: rgba(36, 80, 144, 0.7);
+    --gallery: rgba(162, 189, 244, 0.7);
+
 }
 
 body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
-	font-family: "Ubuntu", sans-serif;
-	color: white;
-	text-decoration: none;
+    /* font-family: "Ubuntu", sans-serif; */
+    color: white;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    color: red;
+
 }
 
 /* Navbar and Footer Styling */
 nav,
 footer {
-	color: white;
-	background-color: var(--mainColor);
+    color: white;
+    background-color: var(--mainColor);
 
-	a:hover {
-		color: lightgray !important;
-	}
+    a:hover {
+        color: lightgray !important;
+    }
 }
 
 /* Footer Styling */
@@ -74,96 +79,96 @@ footer {
 
 /* Main Content */
 #homepage {
-	height: 94vh;
+    height: 94vh;
 
-	:is(p, h3) {
-		color: white;
-		filter: drop-shadow(2px 2px 2px black);
-	}
+    :is(p, h3) {
+        color: red;
+        filter: drop-shadow(2px 2px 2px black);
+    }
 }
 
 .backdrop {
-	background: url("media/scene2.jpg");
-	background-size: cover;
+    background: url("media/scene2.jpg");
+    background-size: cover;
 
-	p {
-		font-size: 4rem;
-	}
+    p {
+        font-size: 4rem;
+    }
 }
 
 /* Info Sidebar */
 .info-sidebar div {
-	background-size: cover;
-	height: 100%;
+    background-size: cover;
+    height: 100%;
 }
 
 /* Side Panel Coloring */
 .about-us {
-	background: url("/media/tree.jpg");
-	background-size: cover;
+    background: url("/media/tree.jpg");
+    background-size: cover;
 
-	.overlay {
-		background-color: var(--transRed);
-	}
+    .overlay {
+        background-color: var(--transRed);
+    }
 }
 
 .events {
-	background: url("/media/path.jpg");
-	background-size: cover;
+    background: url("/media/path.jpg");
+    background-size: cover;
 
-	.overlay {
-		background-color: var(--transYellow);
-	}
+    .overlay {
+        background-color: var(--transYellow);
+    }
 }
 
 .newsletter {
-	background: url("/media/savannah.jpg");
-	background-size: cover;
+    background: url("/media/savannah.jpg");
+    background-size: cover;
 
-	.overlay {
-		background-color: var(--transBlue);
-	}
+    .overlay {
+        background-color: var(--transBlue);
+    }
 }
 
 .gallery {
-	background: url("/media/fall trees.jpg");
-	background-size: cover;
+    background: url("/media/fall trees.jpg");
+    background-size: cover;
 
-	.overlay {
-		background-color: var(--transGreen);
-	}
+    .overlay {
+        background-color: var(--transGreen);
+    }
 }
 
 /* Navbar Specific Styling */
 nav .container-fluid #navbarSdCt {
-	justify-content: space-around;
+    justify-content: space-around;
 }
 
 /* About Us Page */
 #aboutUs {
-	background: url("/media/shack.jpg") center fixed;
-	background-size: cover;
+    background: url("/media/shack.jpg") center fixed;
+    background-size: cover;
 
-	.overlay {
-		background-color: var(--aboutUs);
-	}
+    .overlay {
+        background-color: var(--aboutUs);
+    }
 
-	/* p:last-child {
+    /* p:last-child {
 		margin-bottom: 0px !important;
 	} */
 }
 
 #donate {
-	background: url("/media/scene.jpg") center fixed;
-	background-size: cover;
-	
-	.overlay {
-		background-color: var(--aboutUs);
-	}
+    background: url("/media/scene.jpg") center fixed;
+    background-size: cover;
+
+    .overlay {
+        background-color: var(--aboutUs);
+    }
 }
 
 main .overlay {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 /* #aboutUs:last-child {
@@ -188,16 +193,18 @@ main .overlay {
     flex-wrap: wrap;
 }
 
-#calendar iframe, #event-image img { 
-    width: 100%; 
-    height: auto; 
-    max-width: 100%; 
-} 
+#calendar iframe,
+#event-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
 
-#calendar, #event-image { 
-    flex: 1; 
-    min-width: 300px; 
-    /* Ensure elements don't shrink too much on small screens */ 
+#calendar,
+#event-image {
+    flex: 1;
+    min-width: 300px;
+    /* Ensure elements don't shrink too much on small screens */
 }
 
 /* Styles for FullCalendar iframe */
@@ -209,109 +216,109 @@ main .overlay {
 
 /* Newsletter Section */
 #newsletter {
-	.container {
-		max-width: 600px;
-		margin: 50px auto;
-		padding: 20px;
-		background-color: #fff;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		text-align: center;
-		font-family: "Ubuntu", sans-serif;
-	}
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        /* font-family: "Ubuntu", sans-serif; */
+    }
 
-	.container h1,
-	.container h2 {
-		color: #333;
-	}
+    .container h1,
+    .container h2 {
+        color: #333;
+    }
 
-	form {
-		margin-bottom: 20px;
-	}
+    form {
+        margin-bottom: 20px;
+    }
 
-	label {
-		display: block;
-		margin-bottom: 8px;
-		font-weight: 500;
-	}
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
 
-	input[type="email"] {
-		width: calc(100% - 20px);
-		padding: 8px;
-		margin-bottom: 10px;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-	}
+    input[type="email"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
 
-	button {
-		padding: 10px 20px;
-		background-color: var(--primary-color);
-		color: #fff;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-	}
+    button {
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
-	button:hover {
-		background-color: darken(var(--primary-color), 10%);
-	}
+    button:hover {
+        background-color: darken(var(--primary-color), 10%);
+    }
 
-	.confirmation {
-		display: none;
-	}
+    .confirmation {
+        display: none;
+    }
 
-	#newsletterImage {
-		max-width: 100%;
-		height: auto;
-	}
+    #newsletterImage {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /* Partner Section */
 #partners section {
-	background-color: chocolate;
-	padding: 30px 0;
-	text-align: center;
+    background-color: chocolate;
+    padding: 30px 0;
+    text-align: center;
 
-	.container {
-		max-width: 800px;
-		margin: 0 auto;
-	}
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
-	h2 {
-		font-family: "Montserrat", sans-serif;
-		color: #333;
-		margin-bottom: 20px;
-	}
+    h2 {
+        /* font-family: "Montserrat", sans-serif; */
+        color: #333;
+        margin-bottom: 20px;
+    }
 
-	ul {
-		font-family: "Ubuntu", sans-serif;
-		color: #666;
-		font-size: 1.2rem;
-		margin-bottom: 20px;
+    ul {
+        /* font-family: "Ubuntu", sans-serif; */
+        color: #666;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
 
-		li {
-			font-family: "Ubuntu", sans-serif;
-			color: #424242;
-		}
+        li {
+            /* font-family: "Ubuntu", sans-serif; */
+            color: #424242;
+        }
 
-		p {
-			margin-bottom: 10px;
-		}
+        p {
+            margin-bottom: 10px;
+        }
 
-		img {
-			max-width: 100%;
-			height: auto;
-			margin-bottom: 10px;
-		}
-	}
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    }
 
-	pre,
-	code {
-		background-color: #eee;
-		padding: 10px;
-		border-radius: 5px;
-		white-space: pre-wrap;
-		word-wrap: break-word;
-	}
+    pre,
+    code {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 5px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
 }
 
 /* Donation Page - one time donos - maybe make it into a drop down menu?
@@ -333,51 +340,57 @@ main .overlay {
 /* Deo's code that he tried to make work */
 /* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
-	.backdrop p {
-		font-size: 6vw; /* Larger relative font size on smaller screens */
-	}
+    .backdrop p {
+        font-size: 6vw;
+        /* Larger relative font size on smaller screens */
+    }
 
-	.info-sidebar h3 {
-		font-size: 1rem; /* Adjust font size for h3 on smaller screens */
-	}
+    .info-sidebar h3 {
+        font-size: 1rem;
+        /* Adjust font size for h3 on smaller screens */
+    }
 
-	.info-sidebar p {
-		font-size: 0.9rem; /* Adjust font size for p on smaller screens */
-	}
+    .info-sidebar p {
+        font-size: 0.9rem;
+        /* Adjust font size for p on smaller screens */
+    }
 
-	.navbar a {
-		padding: 5px; /* Adjust padding for better space management */
-	}
+    .navbar a {
+        padding: 5px;
+        /* Adjust padding for better space management */
+    }
 
-	/* Event containers */
-	.flex-container {
+    /* Event containers */
+    .flex-container {
         flex-direction: column;
         align-items: center;
     }
-    #calendar iframe, #event-image img {
+
+    #calendar iframe,
+    #event-image img {
         width: 100%;
     }
 
-	/* Footer adjusting */
-	footer h4,
-	footer p {
-		font-size: 3vw;
-	}
-	
+    /* Footer adjusting */
+    footer h4,
+    footer p {
+        font-size: 3vw;
+    }
+
 }
 
 /* Additional Styles */
 #navbarSdCt a {
-	text-align: center;
+    text-align: center;
 }
 
 #daGallery {
-	background-color: red;
+    background-color: red;
 }
 
 #daGallery img {
-	padding: 1rem;
-	margin: auto;
+    padding: 1rem;
+    margin: auto;
 }
 
 /* i need to implement this better sorry */
