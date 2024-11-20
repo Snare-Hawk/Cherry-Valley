@@ -150,10 +150,6 @@ footer {
 	.overlay {
 		background-color: var(--lightOverlay);
 	}
-
-	/* p:last-child {
-		margin-bottom: 0px !important;
-	} */
 }
 
 #donate {
