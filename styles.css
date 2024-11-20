@@ -153,6 +153,19 @@ nav .container-fluid #navbarSdCt {
 	} */
 }
 
+#events {
+	background: url("/media/shack.jpg") center fixed;
+	background-size: cover;
+
+	.overlay {
+		background-color: var(--aboutUs);
+	}
+
+	/* p:last-child {
+		margin-bottom: 0px !important;
+	} */
+}
+
 #donate {
 	background: url("/media/scene.jpg") center fixed;
 	background-size: cover;
