@@ -148,7 +148,7 @@ footer {
 	background-size: cover;
 
 	.overlay {
-		background-color: var(--aboutUs);
+		background-color: var(--lightOverlay);
 	}
 
 	/* p:last-child {
