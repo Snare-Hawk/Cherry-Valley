@@ -171,6 +171,23 @@ main .overlay {
 	color: red !important;
 } */
 
+/* Events Section */
+#events{
+	.calendar {
+		max-width: 900px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		align-content: center;
+	}
+	
+	.iframe {
+		width: 100%;
+		height: 600px;
+		border: none;
+	}
+	
+}
+
 /* Newsletter Section */
 #newsletter {
 	.container {
@@ -318,6 +335,7 @@ main .overlay {
 	footer p {
 		font-size: 3vw;
 	}
+	
 }
 
 /* Additional Styles */
@@ -333,3 +351,5 @@ main .overlay {
 	padding: 1rem;
 	margin: auto;
 }
+
+/* i need to implement this better sorry */
