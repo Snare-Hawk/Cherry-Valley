@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-
 /* for css animations
 
 	for nav bar
@@ -13,13 +12,13 @@
 
 :root {
 	background-color: var(--mainColor);
-	--mainColor: rgba(36, 79, 143, 1);
+	--mainColor: rgba(36, 80, 144, 1);
 	--transRed: rgba(255, 0, 0, 0.35);
 	--transYellow: rgba(255, 255, 0, 0.35);
 	--transBlue: rgba(0, 0, 255, 0.35);
 	--transGreen: rgba(0, 255, 0, 0.35);
-	--aboutUs: rgba(36, 80, 144, 0.7);
-	--gallery: rgba(162, 189, 244, 0.7);
+	--lightOverlay: rgba(162, 189, 244, 0.7);
+	--darkOverlay: rgba(36, 80, 144, 0.7);
 }
 
 body :is(p, a, h1, h2, h3, h4, h5, h6, li) {
@@ -134,31 +133,30 @@ footer {
 	}
 }
 
-/* Navbar Specific Styling */
-nav .container-fluid #navbarSdCt {
-	justify-content: space-around;
-}
-
 /* About Us Page */
 #aboutUs {
 	background: url("/media/shack.jpg") center fixed;
 	background-size: cover;
 
 	.overlay {
-		background-color: var(--aboutUs);
+		background-color: var(--darkOverlay);
 	}
-
-	/* p:last-child {
-		margin-bottom: 0px !important;
-	} */
 }
 
 #donate {
 	background: url("/media/scene.jpg") center fixed;
 	background-size: cover;
-	
+
 	.overlay {
-		background-color: var(--aboutUs);
+		background-color: var(--lightOverlay);
+	}
+}
+
+#daGallery {
+	background-image: url("media/path.jpg");
+
+	.overlay {
+		background-color: var(--lightOverlay);
 	}
 }
 
@@ -170,64 +168,6 @@ main .overlay {
 	margin-bottom: 0px !important;
 	color: red !important;
 } */
-
-/* Newsletter Section */
-#newsletter {
-	.container {
-		max-width: 600px;
-		margin: 50px auto;
-		padding: 20px;
-		background-color: #fff;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		text-align: center;
-		font-family: "Ubuntu", sans-serif;
-	}
-
-	.container h1,
-	.container h2 {
-		color: #333;
-	}
-
-	form {
-		margin-bottom: 20px;
-	}
-
-	label {
-		display: block;
-		margin-bottom: 8px;
-		font-weight: 500;
-	}
-
-	input[type="email"] {
-		width: calc(100% - 20px);
-		padding: 8px;
-		margin-bottom: 10px;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-	}
-
-	button {
-		padding: 10px 20px;
-		background-color: var(--primary-color);
-		color: #fff;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-	}
-
-	button:hover {
-		background-color: darken(var(--primary-color), 10%);
-	}
-
-	.confirmation {
-		display: none;
-	}
-
-	#newsletterImage {
-		max-width: 100%;
-		height: auto;
-	}
-}
 
 /* Partner Section */
 #partners section {
@@ -278,7 +218,7 @@ main .overlay {
 	}
 }
 
-/* Donation Page - one time donos - maybe make it into a drop down menu?
+/* Donation Page - one time donos - maybe make it into a drop down menu? */
 
 #donate {
 	.container {
@@ -290,7 +230,10 @@ main .overlay {
 		text-align: center;
 		font-family: "Ubuntu", sans-serif;
 	}
-} 
+	* {
+		color: black !important;
+	}
+}
 
 /*
 
@@ -329,7 +272,17 @@ main .overlay {
 	background-color: red;
 }
 
-#daGallery img {
-	padding: 1rem;
+#daGallery /* img */ {
+	/* padding: 1rem;
 	margin: auto;
+	height: 10rem;
+	overflow: hidden; */
+
+	.flex-column {
+		max-width: 250px;
+	}
+
+	img {
+		margin: 6px;
+	}
 }
