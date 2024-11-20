@@ -1,29 +1,32 @@
+<footer>
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Cherry Valley
+			const cherryValley = { lat: 40.9984, lng: -75.2207 };
+			// The map, centered at Cherry Valley
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 17,
+				center: cherryValley,
+			});
+			// The marker, positioned at Cherry Valley
+			const marker = new google.maps.Marker({
+				position: cherryValley,
+				map: map,
+			});
+		}
 
-<script>
-	// Initialize and add the map
-	function initMap() {
-	  // The location of Cherry Valley
-	  const cherryValley = { lat: 40.9984, lng: -75.2207 };
-	  // The map, centered at Cherry Valley
-	  const map = new google.maps.Map(document.getElementById("map"), {
-		zoom: 17,
-		center: cherryValley,
-	  });
-	  // The marker, positioned at Cherry Valley
-	  const marker = new google.maps.Marker({
-		position: cherryValley,
-		map: map,
-	  });
-	}
-  
-	// Load the Google Maps API script
-	document.addEventListener("DOMContentLoaded", function() {
-	  initMap();
-	});
-  </script>
-  
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB523g4oomoyxtwtXcJq-qLwiM9WJfHA3c&callback=initMap" async defer></script>
-  
+		// Load the Google Maps API script
+		document.addEventListener("DOMContentLoaded", function () {
+			initMap();
+		});
+	</script>
+
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB523g4oomoyxtwtXcJq-qLwiM9WJfHA3c&callback=initMap"
+		async
+		defer></script>
+
 	<div class="footer-sections">
 		<div class="contact">
 			<h4>Contact Us</h4>
@@ -37,6 +40,10 @@
 		<div class="social">
 			<h4>Support our Social Media!</h4>
 			<p>
+				<a href="https://youtube.com/@friendsofcherryvalleynatio7219"
+					>YouTube</a
+				>
+				<br />
 				<a href="https://www.facebook.com/friendsofcherryvalley/"
 					>Facebook</a
 				>
@@ -50,15 +57,13 @@
 			<h4>Visit Us</h4>
 			<p>
 				<a
-					href="https://www.bing.com/search?q=Cherry+Valley+National+Wildlife+Refuge+Headquarters+2138+Croasdale+Rd+Stroudsburg%2C+PA+18360&cvid=c27d5976ba724bc1b527829d4d9ba406&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHNDUwajBqOagCBLACAQ&FORM=ANAB01&PC=U531"
-				>
+					href="https://www.bing.com/search?q=Cherry+Valley+National+Wildlife+Refuge+Headquarters+2138+Croasdale+Rd+Stroudsburg%2C+PA+18360&cvid=c27d5976ba724bc1b527829d4d9ba406&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg70gEHNDUwajBqOagCBLACAQ&FORM=ANAB01&PC=U531">
 					Cherry Valley National Wildlife Refuge Headquarters<br />
 					2138 Croasdale Rd<br />
 					Stroudsburg, PA 18360
 				</a>
 			</p>
-			<div id="map" style="height: 400px; width: 100%;"></div>
-
+			<div id="map" style="height: 400px; width: 100%"></div>
 		</div>
 	</div>
 </footer>
