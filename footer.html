@@ -1,14 +1,29 @@
-<script src="script.js"></script>
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-	crossorigin="anonymous"
-></script>
-<script
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB523g4oomoyxtwtXcJq-qLwiM9WJfHA3c&callback=initMap" async
-	defer
-></script>
 
+<script>
+	// Initialize and add the map
+	function initMap() {
+	  // The location of Cherry Valley
+	  const cherryValley = { lat: 40.9984, lng: -75.2207 };
+	  // The map, centered at Cherry Valley
+	  const map = new google.maps.Map(document.getElementById("map"), {
+		zoom: 17,
+		center: cherryValley,
+	  });
+	  // The marker, positioned at Cherry Valley
+	  const marker = new google.maps.Marker({
+		position: cherryValley,
+		map: map,
+	  });
+	}
+  
+	// Load the Google Maps API script
+	document.addEventListener("DOMContentLoaded", function() {
+	  initMap();
+	});
+  </script>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB523g4oomoyxtwtXcJq-qLwiM9WJfHA3c&callback=initMap" async defer></script>
+  
 	<br/>
 	<div class="footer-sections">
 		<div class="contact">
@@ -43,7 +58,8 @@
 					Stroudsburg, PA 18360
 				</a>
 			</p>
-			<div id="map"></div>
+			<div id="map" style="height: 400px; width: 100%;"></div>
+
 		</div>
 	</div>
 </footer>
