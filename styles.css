@@ -143,6 +143,19 @@ footer {
 	}
 }
 
+#events {
+	background: url("/media/shack.jpg") center fixed;
+	background-size: cover;
+
+	.overlay {
+		background-color: var(--aboutUs);
+	}
+
+	/* p:last-child {
+		margin-bottom: 0px !important;
+	} */
+}
+
 #donate {
 	background: url("/media/scene.jpg") center fixed;
 	background-size: cover;
@@ -168,6 +181,100 @@ main .overlay {
 	margin-bottom: 0px !important;
 	color: red !important;
 } */
+
+/* Events Section */
+/* Flex Container for Calendar and Image */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#events {
+    /* Styles for the flex container */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#calendar iframe, #event-image img { 
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+} 
+
+#calendar, #event-image { 
+    flex: 1; 
+    min-width: 300px; 
+    /* Ensure elements don't shrink too much on small screens */ 
+}
+
+/* Styles for FullCalendar iframe */
+#calendar iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/* Newsletter Section */
+#newsletter {
+	.container {
+		max-width: 600px;
+		margin: 50px auto;
+		padding: 20px;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		font-family: "Ubuntu", sans-serif;
+	}
+
+	.container h1,
+	.container h2 {
+		color: #333;
+	}
+
+	form {
+		margin-bottom: 20px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 8px;
+		font-weight: 500;
+	}
+
+	input[type="email"] {
+		width: calc(100% - 20px);
+		padding: 8px;
+		margin-bottom: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	button {
+		padding: 10px 20px;
+		background-color: var(--primary-color);
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: darken(var(--primary-color), 10%);
+	}
+
+	.confirmation {
+		display: none;
+	}
+
+	#newsletterImage {
+		max-width: 100%;
+		height: auto;
+	}
+}
 
 /* Partner Section */
 #partners section {
@@ -256,11 +363,21 @@ main .overlay {
 		padding: 5px; /* Adjust padding for better space management */
 	}
 
-	/* andie tests the foot not clickbait */
+	/* Event containers */
+	.flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #calendar iframe, #event-image img {
+        width: 100%;
+    }
+
+	/* Footer adjusting */
 	footer h4,
 	footer p {
 		font-size: 3vw;
 	}
+	
 }
 
 /* Additional Styles */
@@ -286,3 +403,5 @@ main .overlay {
 		margin: 6px;
 	}
 }
+
+/* i need to implement this better sorry */
