@@ -138,53 +138,54 @@ footer {
 	background: url("/media/shack.jpg") center fixed;
 	background-size: cover;
 	color: #333; /* Set a default text color */
-  
+
 	.overlay {
-	  background-color: var(--darkOverlay);
-	  color: #333; /* Ensure text color within overlay is set appropriately */
-	}
-  
-	h2, h3, p, ul, li {
-	  color: #333; /* Ensure the text color is set for all elements */
+		background-color: var(--darkOverlay);
+		color: #333; /* Ensure text color within overlay is set appropriately */
 	}
 
-	a { 
-		color: #333; /* Set the hyperlink color to blue or any other color you prefer */ 
-		text-decoration: underline; /* Optional: underline the link */ 
+	h2,
+	h3,
+	p,
+	ul,
+	li {
+		color: #333; /* Ensure the text color is set for all elements */
+	}
+
+	a {
+		color: #333; /* Set the hyperlink color to blue or any other color you prefer */
+		text-decoration: underline; /* Optional: underline the link */
 	}
 
 	/* Officer Cards */
-.card {
-	border: none;
-	border-radius: 10px;
-	overflow: hidden;
-  }
-  
-  .card-img-top {
-	width: 100%;
-	height: auto;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-  }
-  
-  .card-body {
-	background-color: #fff;
-	padding: 20px;
-  }
-  
-  .card-title {
-	margin: 0;
-	font-size: 1.25em;
-	color: #333;
-  }
-  
-  .card-text {
-	color: #666;
-  }
-  
-  }
-  
-  
+	.card {
+		border: none;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	.card-img-top {
+		width: 100%;
+		height: auto;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.card-body {
+		background-color: #fff;
+		padding: 20px;
+	}
+
+	.card-title {
+		margin: 0;
+		font-size: 1.25em;
+		color: #333;
+	}
+
+	.card-text {
+		color: #666;
+	}
+}
 
 #events {
 	background: url("/media/shack.jpg") center fixed;
@@ -212,6 +213,14 @@ footer {
 	}
 }
 
+#newsletter {
+	background-image: url(media/horse.jpg);
+
+	.overlay {
+		background-color: var(--lightOverlay);
+	}
+}
+
 main .overlay {
 	overflow: hidden;
 }
@@ -223,19 +232,8 @@ main .overlay {
 
 /* Events Section */
 /* Flex Container for Calendar and Image */
-.flex-container {
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-	flex-wrap: wrap;
-}
-
-#events {
-	/* Styles for the flex container */
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-	flex-wrap: wrap;
+#events .flex-container * {
+	padding: 5px;
 }
 
 #calendar iframe,
@@ -268,86 +266,22 @@ main .overlay {
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	text-align: center;
-	display: flex; 
-	justify-content: center; 
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	font-family: "Ubuntu", sans-serif;
-  }
-  
-  #membership .container1 {
+}
+
+#membership .container1 {
 	max-width: 100%;
-  }
-
-  #membership .container2 {
-	max-width: 600px;
-  }
-  
-  #membership h2,
-  #membership p {
-	color: #333;
-  }
-  
-  form {
-	margin-bottom: 20px;
-  }
-  
-  label {
-	display: block;
-	margin-bottom: 8px;
-	font-weight: 500;
-  }
-  
-  input[type="text"],
-  input[type="email"] {
-	width: calc(100% - 20px);
-	padding: 8px;
-	margin-bottom: 10px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-  }
-  
-  button {
-	padding: 10px 20px;
-	background-color: var(--primary-color);
-	color: #fff;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-  }
-  
-  button:hover {
-	background-color: darken(var(--primary-color), 20%);
-  }
-  
-  .confirmation {
-	display: none; /* Initially hidden */
-	text-align: center;
-	padding: 10px;
-	margin-top: 20px;
-	border: 1px solid #28a745;
-	background-color: #d4edda;
-	color: #155724;
-	border-radius: 4px;
-  }
-  
-
-/* Newsletter Section */
-#newsletter {
-	margin: 50px auto;
-	padding: 20px;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	text-align: center;
-	font-family: "Ubuntu", sans-serif;
 }
 
-#newsletter .container {
+#membership .container2 {
 	max-width: 600px;
 }
 
-#newsletter h1,
-#newsletter h2,
-#newsletter p {
+#membership h2,
+#membership p {
 	color: #333;
 }
 
@@ -372,7 +306,7 @@ input[type="email"] {
 
 button {
 	padding: 10px 20px;
-	background-color: var(--primary-color);
+	background-color: var(--mainColor);
 	color: #fff;
 	border: none;
 	border-radius: 4px;
@@ -380,7 +314,7 @@ button {
 }
 
 button:hover {
-	background-color: darken(var(--primary-color), 20%);
+	background-color: darken(var(--mainColor), 20%) !important;
 }
 
 .confirmation {
@@ -392,13 +326,78 @@ button:hover {
 	background-color: #d4edda;
 	color: #155724;
 	border-radius: 4px;
-  }
-  
+}
 
-#newsletterImage {
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 20px;
+/* Newsletter Section */
+#newsletter {
+	/* margin: 50px auto; */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	/* background-color: red; */
+}
+
+#newsletter .container {
+	max-width: 600px;
+}
+
+#newsletter :is(p, h1, h2) {
+	color: #333;
+}
+
+#newsletter {
+	form {
+		margin-bottom: 20px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 8px;
+		font-weight: 500;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		align-self: center;
+		width: calc(100% - 20px);
+		padding: 8px;
+		margin-bottom: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	button {
+		padding: 10px 20px;
+		/* background-color: var(--mainColor) !important; */
+		/* color: #fff; */
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: darken(var(--mainColor), 20%);
+	}
+
+	.confirmation {
+		display: none; /* Initially hidden */
+		text-align: center;
+		padding: 10px;
+		margin-top: 20px;
+		border: 1px solid #28a745;
+		background-color: #d4edda;
+		color: #155724;
+		border-radius: 4px;
+	}
+	#newsletterImage {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+}
+
+#newsForm {
+	background-color: white;
 }
 
 /* Partner Section */
@@ -412,9 +411,9 @@ button:hover {
 		margin: 0 auto;
 	}
 
-	a { 
-		color: #333; /* Set the hyperlink color to blue or any other color you prefer */ 
-		text-decoration: underline; /* Optional: underline the link */ 
+	a {
+		color: #333; /* Set the hyperlink color to blue or any other color you prefer */
+		text-decoration: underline; /* Optional: underline the link */
 	}
 
 	h2 {
@@ -520,10 +519,6 @@ button:hover {
 	text-align: center;
 }
 
-#daGallery {
-	background-color: red;
-}
-
 #daGallery /* img */ {
 	/* padding: 1rem;
 	margin: auto;
@@ -572,15 +567,16 @@ button:hover {
 }
 
 /* Body styling */
-body {
+/* body {
 	font-family: Arial, sans-serif;
 	background-color: #f8f9fa;
-	padding: 20px;
-}
+	padding: 20px; 
+} */
 
 /* Container styling */
-.container {
-	max-width: 600px;
+
+#aboutUs .container {
+	/* max-width: 600px; */
 	margin: 0 auto;
 	padding: 20px;
 	background-color: #ffffff;
