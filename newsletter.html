@@ -32,23 +32,25 @@
 					alt="Newsletter Image"
 					id="newsletterImage"
 				/>
-				<h2>Subscribe to our Newsletter</h2>
-				<iframe
-					src="https://docs.google.com/forms/d/e/1FAIpQLSd-3BZTI_6ICO9OoEcRH-BVKIkcYqg0agVF9enUbPXmcz_hAg/viewform?embedded=true"
-					width="100%"
-					height="647"
-					frameborder="0"
-					marginheight="0"
-					marginwidth="0"
-				>
-					Loading…</iframe
-				>
-				<div class="confirmation" id="confirmation">
+				<h2>Subscribe to our Newsletter!</h2> 
+				<form id="newsletter-form" method="POST"> 
+					<div class="mb-3"> 
+						<label for="name" class="form-label">Name</label> 
+						<input type="text" class="form-control" id="name" name="name" required /> 
+					</div> 
+					<div class="mb-3"> 
+						<label for="email" class="form-label">Email address</label> 
+						<input type="email" class="form-control" id="email" name="email" required /> 
+					</div> 
+					<button type="submit" class="btn btn-primary">Submit</button> 
+				</form>				  
+				<div class="confirmation" id="confirmation"> 
 					<h2>Thank you for subscribing!</h2>
 				</div>
 				<div id="calendar"></div>
 			</div>
 		</main>
+		<script src="formSubmission.js"></script>
 		<div id="footer-placeholder"></div>
 	</body>
 </html>
