@@ -1,8 +1,8 @@
-// newsletter form
+// form for membership
 
 document.addEventListener('DOMContentLoaded', function() {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz80zeA42GzU2d-eKbz7vl8lKIK0dMSfoVHDssJPI6Y-V67Fbq4rvPx-bx9HDSuK8J-/exec';
-    const form = document.getElementById('newsletter-form');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxYelCfpIe9_X_1sf5NdjApIol0OqGP20vX7n0YeN-nlF2-aCUvBcDqoXcMNuIDepM/exec'; // Replace with your new Google Apps Script URL
+    const form = document.getElementById('member-form');
     const confirmation = document.getElementById('confirmation');
   
     form.addEventListener('submit', function(e) {
@@ -21,8 +21,4 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error!', error.message));
     });
   });
-  
-  
-  
-  
   

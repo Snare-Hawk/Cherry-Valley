@@ -216,6 +216,78 @@ main .overlay {
 	border: none;
 }
 
+/* Membership Section */
+
+/* Membership Section */
+#membership {
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	font-family: "Ubuntu", sans-serif;
+  }
+  
+  #membership .container1 {
+	max-width: 100%;
+  }
+
+  #membership .container2 {
+	max-width: 600px;
+  }
+  
+  #membership h2,
+  #membership p {
+	color: #333;
+  }
+  
+  form {
+	margin-bottom: 20px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 500;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+	width: calc(100% - 20px);
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  button {
+	padding: 10px 20px;
+	background-color: var(--primary-color);
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: darken(var(--primary-color), 20%);
+  }
+  
+  .confirmation {
+	display: none; /* Initially hidden */
+	text-align: center;
+	padding: 10px;
+	margin-top: 20px;
+	border: 1px solid #28a745;
+	background-color: #d4edda;
+	color: #155724;
+	border-radius: 4px;
+  }
+  
+
 /* Newsletter Section */
 #newsletter {
 	margin: 50px auto;
@@ -231,7 +303,8 @@ main .overlay {
 }
 
 #newsletter h1,
-#newsletter h2 {
+#newsletter h2,
+#newsletter p {
 	color: #333;
 }
 
