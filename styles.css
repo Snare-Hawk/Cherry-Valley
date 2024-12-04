@@ -152,7 +152,38 @@ footer {
 		color: #333; /* Set the hyperlink color to blue or any other color you prefer */ 
 		text-decoration: underline; /* Optional: underline the link */ 
 	}
+
+	/* Officer Cards */
+.card {
+	border: none;
+	border-radius: 10px;
+	overflow: hidden;
   }
+  
+  .card-img-top {
+	width: 100%;
+	height: auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+	background-color: #fff;
+	padding: 20px;
+  }
+  
+  .card-title {
+	margin: 0;
+	font-size: 1.25em;
+	color: #333;
+  }
+  
+  .card-text {
+	color: #666;
+  }
+  
+  }
+  
   
 
 #events {
