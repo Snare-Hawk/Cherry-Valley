@@ -137,11 +137,23 @@ footer {
 #aboutUs {
 	background: url("/media/shack.jpg") center fixed;
 	background-size: cover;
-
+	color: #333; /* Set a default text color */
+  
 	.overlay {
-		background-color: var(--darkOverlay);
+	  background-color: var(--darkOverlay);
+	  color: #333; /* Ensure text color within overlay is set appropriately */
 	}
-}
+  
+	h2, h3, p, ul, li {
+	  color: #333; /* Ensure the text color is set for all elements */
+	}
+
+	a { 
+		color: #333; /* Set the hyperlink color to blue or any other color you prefer */ 
+		text-decoration: underline; /* Optional: underline the link */ 
+	}
+  }
+  
 
 #events {
 	background: url("/media/shack.jpg") center fixed;
@@ -367,6 +379,11 @@ button:hover {
 	.container {
 		max-width: 800px;
 		margin: 0 auto;
+	}
+
+	a { 
+		color: #333; /* Set the hyperlink color to blue or any other color you prefer */ 
+		text-decoration: underline; /* Optional: underline the link */ 
 	}
 
 	h2 {
